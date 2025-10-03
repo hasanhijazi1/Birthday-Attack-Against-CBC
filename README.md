@@ -1,12 +1,12 @@
 
 # test_attack
-gcc -o attack.run test_attack.c attack.c cbc.c speck.c rand.c -DBLOCKSIZE= '32 or 48 or 64'
+gcc -o test_attack.run test_attack.c attack.c cbc.c speck.c rand.c -DBLOCKSIZE= '32 or 48 or 64'
 # test_cbc
-gcc -o cbc.run test_cbc.c cbc.c speck.c rand.c -DBLOCKSIZE='32 or 48 or 64'
+gcc -o test_cbc.run test_cbc.c cbc.c speck.c rand.c -DBLOCKSIZE='32 or 48 or 64'
 
 # After building:
-./cbc.run
-./attack.run 
+./test_cbc.run
+./test_attack.run 
 
 
 # Switching Between Brute Force and Optimized Attack
